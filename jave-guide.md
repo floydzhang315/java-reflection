@@ -13,9 +13,9 @@ Java 反射机制功能强大而且非常实用。举个例子，你可以用反
 
 改系列文章中所描述介绍的是 Java 6 版本的反射机制。
 
-Java反射的例子
+## Java 反射的例子
 
-下面是一个Java反射的简单例子：
+下面是一个 Java 反射的简单例子：
 
 ```
 Method[] methods = MyObject.class.getMethods();
@@ -25,7 +25,7 @@ for(Method method : methods){
 }
 ```
 
-在这个例子中通过调用MyObject类的class属性获取对应的Class类的对象，通过这个Class类的对象获取MyObject类中的方法集合。迭代这个方法的集合并且打印每个方法的名字。
+在这个例子中通过调用 MyObject 类的 class 属性获取对应的 Class 类的对象，通过这个 Class 类的对象获取 MyObject 类中的方法集合。迭代这个方法的集合并且打印每个方法的名字。
 
 原创文章，转载请注明： 转载自[并发编程网 – ifeve.com](http://ifeve.com/)
 
