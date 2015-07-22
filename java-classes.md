@@ -3,9 +3,9 @@
 [原文地址](http://tutorials.jenkov.com/java-reflection/classes.html)  作者: Jakob Jenkov  译者:叶文海（yewenhai@gamil.com）
 
 
-使用Java反射机制可以在运行时期检查Java类的信息，检查Java类的信息往往是你在使用Java反射机制的时候所做的第一件事情，通过获取类的信息你可以获取以下相关的内容：
+使用 Java 反射机制可以在运行时期检查 Java 类的信息，检查 Java 类的信息往往是你在使用 Java 反射机制的时候所做的第一件事情，通过获取类的信息你可以获取以下相关的内容：
 
-1. Class对象
+1. Class 对象
 2. 类名
 3. 修饰符
 4. 包信息
@@ -23,7 +23,7 @@
 
 ## Class 对象
 
-在你想检查一个类的信息之前，你首先需要获取类的Class对象。Java中的所有类型包括基本类型(int, long, float等等)，即使是数组都有与之关联的Class类的对象。如果你在编译期知道一个类的名字的话，那么你可以使用如下的方式获取一个类的Class对象。
+在你想检查一个类的信息之前，你首先需要获取类的 Class 对象。Java 中的所有类型包括基本类型(int, long, float等等)，即使是数组都有与之关联的 Class 类的对象。如果你在编译期知道一个类的名字的话，那么你可以使用如下的方式获取一个类的 Class 对象。
 
 ```
 Class myObjectClass = MyObject.class;
@@ -59,7 +59,7 @@ String simpleClassName = aClass.getSimpleName();
 
 ## 修饰符
 
-可以通过Class对象来访问一个类的修饰符，即public,private,static等等的关键字，你可以使用如下方法来获取类的修饰符：
+可以通过 Class 对象来访问一个类的修饰符， 即public,private,static 等等的关键字，你可以使用如下方法来获取类的修饰符：
 
 ```
 Class  aClass = ... //获取Class对象，具体方式可见Class对象小节
@@ -87,7 +87,7 @@ Modifier.isVolatile(int modifiers);
 
 ## 包信息
 
-可以使用Class对象通过如下的方式获取包信息：
+可以使用 Class 对象通过如下的方式获取包信息：
 
 
 ```
@@ -137,7 +137,7 @@ Constructor[] constructors = aClass.getConstructors();
 Method[] method = aClass.getMethods();
 ```
 
-更多有关Method的信息可以访问 [Methods](http://ifeve.com/java-reflection-methods/)。
+更多有关 Method 的信息可以访问 [Methods](http://ifeve.com/java-reflection-methods/)。
 
 ## 变量
 
