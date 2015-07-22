@@ -13,7 +13,7 @@
 
 ## 获取 Constructor 对象
 
-我们可以通 过Class 对象来获取 Constructor 类的实例：
+我们可以通 过 Class 对象来获取 Constructor 类的实例：
 
 
 ```
