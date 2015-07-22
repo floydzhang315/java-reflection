@@ -1,6 +1,8 @@
 # Java 动态类加载与重载
 
-[原文地址](http://tutorials.jenkov.com/java-reflection/dynamic-class-loading-reloading.html) 作者: Jakob Jenkov 译者:叶文海（yewenhai@gmail.com）
+[原文地址](http://tutorials.jenkov.com/java-reflection/dynamic-class-loading-reloading.html)   
+
+作者: Jakob Jenkov 译者:叶文海（yewenhai@gmail.com）
 
 ## 内容索引
 
@@ -183,6 +185,5 @@ public class MyObject extends MyObjectSuperClass implements AnInterface2{
 }
 ```
 
-原创文章，转载请注明： 转载自[并发编程网 – ifeve.com](http://ifeve.com/)
 
 本文链接地址: [Java Reflection(十二):动态类加载与重载](http://ifeve.com/dynamic-class-loading-reloading/)

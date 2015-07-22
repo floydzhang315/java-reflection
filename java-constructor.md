@@ -1,6 +1,8 @@
 # Java 构造器
 
-[原文地址](http://tutorials.jenkov.com/java-reflection/constructors.html) 作者: Jakob Jenkov 译者:叶文海（yewenhai@gamil.com）
+[原文地址](http://tutorials.jenkov.com/java-reflection/constructors.html)   
+
+作者: Jakob Jenkov 译者:叶文海（yewenhai@gamil.com）
 
 ## 内容索引
 
@@ -52,9 +54,9 @@ Class[] parameterTypes = constructor.getParameterTypes();
 Constructor constructor = MyObject.class.getConstructor(String.class);
 MyObject myObject = (MyObject)
  constructor.newInstance("constructor-arg1");
-```
+```   
+
 constructor.newInstance()方法的方法参数是一个可变参数列表，但是当你调用构造方法的时候你必须提供精确的参数，即形参与实参必须一一对应。在这个例子中构造方法需要一个 String 类型的参数，那我们在调用 newInstance 方法的时候就必须传入一个 String 类型的参数。
 
-原创文章，转载请注明： 转载自[并发编程网 – ifeve.com](http://ifeve.com/)
 
 本文链接地址: [Java Reflection(三):构造器](http://ifeve.com/java-reflection-constructors/)

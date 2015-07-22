@@ -1,6 +1,8 @@
 # Java 变量
 
-[原文地址](http://tutorials.jenkov.com/java-reflection/fields.html) 作者: Jakob Jenkov 译者:叶文海（yewenhai@gamil.com）
+[原文地址](http://tutorials.jenkov.com/java-reflection/fields.html)   
+
+作者: Jakob Jenkov 译者:叶文海（yewenhai@gamil.com）
 
 ## 内容索引
 
@@ -10,8 +12,6 @@
 4. 获取或设置（get/set）变量值
 
 使用 Java 反射机制你可以运行期检查一个类的变量信息(成员变量)或者获取或者设置变量的值。通过使用 java.lang.reflect.Field 类就可以实现上述功能。在本节会带你深入了解 Field 对象的信息。
-
-
 
 ## 获取 Field 对象
 
@@ -52,7 +52,7 @@ String fieldName = field.getName();
 
 ## 变量类型
 
-你可以通过调用 Field.getType()方法来获取一个变量的类型（如String, int等等）
+你可以通过调用 Field.getType()方法来获取一个变量的类型（如 String, int 等等）
 
 ```
 Field field = aClass.getField("someField");
@@ -77,7 +77,5 @@ field.set(objetInstance, value);
 
 传入 Field.get()/Field.set()方法的参数 objetInstance 应该是拥有指定变量的类的实例。在上述的例子中传入的参数是 MyObjec t类的实例，是因为 someField 是 MyObject 类的实例。
 如果变量是静态变量的话(public static)那么在调用 Field.get()/Field.set()方法的时候传入 null 做为参数而不用传递拥有该变量的类的实例。(译者注：你如果传入拥有该变量的类的实例也可以得到相同的结果)
-
-原创文章，转载请注明： 转载自[并发编程网 – ifeve.com](http://ifeve.com/)
 
 本文链接地址: [Java Reflection(四):变量](http://ifeve.com/java-reflection-fields/)

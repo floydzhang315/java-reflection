@@ -1,6 +1,8 @@
 # Java 动态代理
 
-[原文地址](http://tutorials.jenkov.com/java-reflection/dynamic-proxies.html) 作者: Jakob Jenkov 译者:叶文海（yewenhai@gmail.com）
+[原文地址](http://tutorials.jenkov.com/java-reflection/dynamic-proxies.html) 
+
+作者: Jakob Jenkov 译者:叶文海（yewenhai@gmail.com）
 
 ## 内容索引
 
@@ -124,7 +126,5 @@ public class MyAction{
 ## 类似 AOP 的方法拦截器
 
 Spring 框架可以拦截指定 bean 的方法调用，你只需提供这个 bean 继承的接口。Spring 使用动态代理来包装 bean。所有对 bean 中方法的调用都会被代理拦截。代理可以判断在调用实际方法之前是否需要调用其他方法或者调用其他对象的方法，还可以在 bean 的方法调用完毕之后再调用其他的代理方法。
-
-原创文章，转载请注明： 转载自[并发编程网 – ifeve.com](http://ifeve.com/)
 
 本文链接地址: [Java Reflection(十一):动态代理](http://ifeve.com/java-reflection-11-dynamic-proxies/)

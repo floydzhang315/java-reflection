@@ -1,6 +1,8 @@
 # 指南
 
-[原文地址](http://tutorials.jenkov.com/java-reflection/index.html)   作者: Jakob Jenkov 译者:叶文海（yewenhai@gamil.com）
+[原文地址](http://tutorials.jenkov.com/java-reflection/index.html)      
+
+作者: Jakob Jenkov 译者:叶文海（yewenhai@gamil.com）
 
 Java 反射机制可以让我们在编译期(Compile Time)之外的运行期(Runtime)检查类，接口，变量以及方法的信息。反射还可以让我们在运行期实例化对象，调用方法，通过调用get/set方法获取变量的值。
 
@@ -27,6 +29,5 @@ for(Method method : methods){
 
 在这个例子中通过调用 MyObject 类的 class 属性获取对应的 Class 类的对象，通过这个 Class 类的对象获取 MyObject 类中的方法集合。迭代这个方法的集合并且打印每个方法的名字。
 
-原创文章，转载请注明： 转载自[并发编程网 – ifeve.com](http://ifeve.com/)
 
 本文链接地址: [Java Reflection(一):Java反射指南](http://ifeve.com/java-reflection-tutorial/)

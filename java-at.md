@@ -1,6 +1,8 @@
 # Java 注解
 
-[原文地址](http://tutorials.jenkov.com/java-reflection/annotations.html) 作者: Jakob Jenkov 译者:叶文海（yewenhai@gmail.com）
+[原文地址](http://tutorials.jenkov.com/java-reflection/annotations.html)
+
+ 作者: Jakob Jenkov 译者:叶文海（yewenhai@gmail.com）
 
 ## 内容索引
 
@@ -197,8 +199,5 @@ if(annotation instanceof MyAnnotation){
  System.out.println("value: " + myAnnotation.value());
 }
 ```
-
-
-原创文章，转载请注明： 转载自[并发编程网 – ifeve.com](http://ifeve.com/)
 
 本文链接地址: [Java Reflection(八):注解](http://ifeve.com/java-reflection-8-annotation/)

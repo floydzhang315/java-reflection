@@ -1,6 +1,8 @@
 # java 类
 
-[原文地址](http://tutorials.jenkov.com/java-reflection/classes.html)  作者: Jakob Jenkov  译者:叶文海（yewenhai@gamil.com）
+[原文地址](http://tutorials.jenkov.com/java-reflection/classes.html)    
+
+作者: Jakob Jenkov  译者:叶文海（yewenhai@gamil.com）
 
 
 使用 Java 反射机制可以在运行时期检查 Java 类的信息，检查 Java 类的信息往往是你在使用 Java 反射机制的时候所做的第一件事情，通过获取类的信息你可以获取以下相关的内容：
@@ -108,7 +110,8 @@ Class superclass = aClass.getSuperclass();
 
 可以看到 superclass 对象其实就是一个 Class 类的实例，所以你可以继续在这个对象上进行反射操作。
 
-## 实现的接口
+## 实现的接口  
+
 可以通过如下方式获取指定类所实现的接口集合：
 
 ```
@@ -159,6 +162,5 @@ Annotation[] annotations = aClass.getAnnotations();
 
 更多有关 Annotation 的信息可以访问 [Annotations](http://ifeve.com/java-reflection-annotations/)。
 
-原创文章，转载请注明： 转载自[并发编程网 – ifeve.com](http://ifeve.com/)
 
 本文链接地址: [Java Reflection(二)：Classes](http://ifeve.com/java-reflection-classes/)

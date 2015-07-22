@@ -1,6 +1,8 @@
 # Java 泛型
 
-[原文地址](http://tutorials.jenkov.com/java-reflection/generics.html) 作者: Jakob Jenkov 译者:叶文海（yewenhai@gmail.com）
+[原文地址](http://tutorials.jenkov.com/java-reflection/generics.html) 
+
+作者: Jakob Jenkov 译者:叶文海（yewenhai@gmail.com）
 
 ## 内容索引
 
@@ -10,7 +12,6 @@
 4. 泛型变量类型
 
 我常常在一些文章以及论坛中读到说 Java 泛型信息在编译期被擦除（erased）所以你无法在运行期获得有关泛型的信息。其实这种说法并不完全正确的，在一些情况下是可以在运行期获取到泛型的信息。这些情况其实覆盖了一些我们需要泛型信息的需求。在本节中我们会演示一下这些情况。
-
 
 
 ## 运用泛型反射的经验法则
@@ -123,7 +124,5 @@ if(genericFieldType instanceof ParameterizedType){
 ```
 
 这段代码会打印出”fieldArgClass = java.lang.String”。Type[]数组 fieldArgClass 只有一个结果 – 一个代表 java.lang.String 的 Class 类的实例。Class 类实现了 Type 接口。
-
-原创文章，转载请注明： 转载自[并发编程网 – ifeve.com](http://ifeve.com/)
 
 本文链接地址: [Java Reflection(九):泛型](http://ifeve.com/java-reflection-9-generics/)
